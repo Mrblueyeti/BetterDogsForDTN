@@ -748,6 +748,27 @@
             "use_model" : "betterdogs_dtn:wolf",
             "based_on" : "The Better Dogs Resources Pack.",
             "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Cerberus (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/cerberus_gray",
+            "use_model" : "betterdogs_dtn:cerberus",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Cerberus (Red)",
+            "skin_id" : "betterdogs_dtn:textures/cerberus_red",
+            "use_model" : "betterdogs_dtn:cerberus",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Cerberus (Black)",
+            "skin_id" : "betterdogs_dtn:textures/cerberus_black",
+            "use_model" : "betterdogs_dtn:cerberus",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
         }
     ]
 }

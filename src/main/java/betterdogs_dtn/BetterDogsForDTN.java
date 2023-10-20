@@ -2,6 +2,7 @@ package betterdogs_dtn;
 import org.joml.Vector3f;
 
 import betterdogs_dtn.models.BDWolf;
+import betterdogs_dtn.models.Cerberus;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
@@ -63,7 +64,8 @@ public class BetterDogsForDTN {
         event.register(new Builder(getRes("neapolitan_mastiff"), ModelLayerLocations.NEAPO));        
         event.register(new Builder(getRes("afghan_hound"), ModelLayerLocations.AFGHAN_HOUND));        
         event.register(new Builder(getRes("shiba_inu"), ModelLayerLocations.SHIBA_INU));        
-      
+        event.register(new Builder(getRes("cerberus"), ModelLayerLocations.CERBERUS)
+            .withGlowingEyes());
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
@@ -104,6 +106,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.NEAPO, LayerDefinitions::neapolitan_mastiff);
         event.registerLayerDefinition(ModelLayerLocations.AFGHAN_HOUND, LayerDefinitions::afghan_hound);
         event.registerLayerDefinition(ModelLayerLocations.SHIBA_INU, LayerDefinitions::shiba_inu);
+        event.registerLayerDefinition(ModelLayerLocations.CERBERUS, Cerberus::createBodyLayer);
    }
 
     public static ResourceLocation getRes(String name) {
