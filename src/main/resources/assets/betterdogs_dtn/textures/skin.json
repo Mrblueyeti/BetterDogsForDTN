@@ -750,6 +750,35 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Skeleton Wolf",
+            "skin_id" : "betterdogs_dtn:textures/wolf_skeleton",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Skeleton Wolf (Glow)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_skeleton_glow",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wither Skeleton Wolf",
+            "skin_id" : "betterdogs_dtn:textures/wolf_wither_skeleton",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Wither Skeleton Wolf (Glow)",
+            "skin_id" : "betterdogs_dtn:textures/wolf_wither_skeleton_glow",
+            "use_model" : "betterdogs_dtn:wolf",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+
+        {
             "skin_name" : "Better Dogs - Cerberus (Gray)",
             "skin_id" : "betterdogs_dtn:textures/cerberus_gray",
             "use_model" : "betterdogs_dtn:cerberus",
