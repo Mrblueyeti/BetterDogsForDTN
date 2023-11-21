@@ -687,6 +687,27 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Standard Schnauzer (Black Tan)",
+            "skin_id" : "betterdogs_dtn:textures/schnauzer_black_tan",
+            "use_model" : "betterdogs_dtn:schnauzer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Standard Schnauzer (Gray)",
+            "skin_id" : "betterdogs_dtn:textures/schnauzer_gray",
+            "use_model" : "betterdogs_dtn:schnauzer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
+            "skin_name" : "Better Dogs - Standard Schnauzer (White)",
+            "skin_id" : "betterdogs_dtn:textures/schnauzer_white",
+            "use_model" : "betterdogs_dtn:schnauzer",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Husky (Black) #1",
             "skin_id" : "betterdogs_dtn:textures/husky_black_var1",
             "use_model" : "betterdogs_dtn:husky",

@@ -3040,4 +3040,125 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition schnauzer() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 13.0F, 6.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create().texOffs(844, 13).addBox(-1.0F, -0.8031F, -1.3012F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_tail_top_r1 = real_tail.addOrReplaceChild("schnauzer_tail_top_r1", CubeListBuilder.create().texOffs(982, 21).addBox(-0.9999F, 0.9273F, 2.4601F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0001F)), PartPose.offsetAndRotation(0.0F, 3.2816F, -3.9287F, 0.3927F, 0.0F, 0.0F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 17.5F, 6.0F));
+
+		PartDefinition schnauzer_leg8 = right_hind_leg.addOrReplaceChild("schnauzer_leg8", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.0F, -7.2F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg3_rel2 = schnauzer_leg8.addOrReplaceChild("schnauzer_leg3_rel2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg3_rot2 = schnauzer_leg3_rel2.addOrReplaceChild("schnauzer_leg3_rot2", CubeListBuilder.create().texOffs(2308, 12).mirror().addBox(-1.0F, 6.3916F, -5.4517F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, -0.5F, -0.75F, 0.0873F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg3_hip2 = schnauzer_leg3_rot2.addOrReplaceChild("schnauzer_leg3_hip2", CubeListBuilder.create().texOffs(2293, 0).mirror().addBox(-2.5F, 3.8959F, -2.8365F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(1.5F, 0.4957F, 1.3847F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 17.5F, 6.0F));
+
+		PartDefinition schnauzer_leg4 = left_hind_leg.addOrReplaceChild("schnauzer_leg4", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.25F, -6.95F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg4_rel3 = schnauzer_leg4.addOrReplaceChild("schnauzer_leg4_rel3", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg4_rot3 = schnauzer_leg4_rel3.addOrReplaceChild("schnauzer_leg4_rot3", CubeListBuilder.create().texOffs(2308, 12).addBox(-1.0F, 6.4352F, -4.9536F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.75F, -1.0F, 0.0873F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_leg4_hip3 = schnauzer_leg4_rot3.addOrReplaceChild("schnauzer_leg4_hip3", CubeListBuilder.create().texOffs(2293, 0).addBox(0.5F, 3.9395F, -2.3384F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.5F, 0.4957F, 1.3847F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.0F, 18.0F, -4.0F));
+
+		PartDefinition schnauzer_leg6 = right_front_leg.addOrReplaceChild("schnauzer_leg6", CubeListBuilder.create().texOffs(2315, 22).mirror().addBox(-1.0F, -3.8F, -13.7F, 2.0F, 3.0F, 7.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.1F, -7.75F, 2.55F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 18.0F, -4.0F));
+
+		PartDefinition schnauzer_leg5 = left_front_leg.addOrReplaceChild("schnauzer_leg5", CubeListBuilder.create().texOffs(2315, 22).addBox(-1.0F, -3.8F, -13.7F, 2.0F, 3.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.1F, -7.75F, 2.55F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(2290, 6).addBox(-2.5F, -2.7F, -1.4F, 5.0F, 7.0F, 5.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(0.0F, 15.75F, 2.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 15.5F, -2.5F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_mane2 = upper_body.addOrReplaceChild("schnauzer_mane2", CubeListBuilder.create().texOffs(2289, 18).addBox(-3.5F, -13.0F, -1.55F, 6.0F, 7.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5F, 9.25F, -1.5F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 8.35F, -5.0F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -2.35F, -1.5F));
+
+		PartDefinition schnauzer_ear_right2 = right_ear.addOrReplaceChild("schnauzer_ear_right2", CubeListBuilder.create().texOffs(729, 20).mirror().addBox(1.3534F, -1.118F, -3.9635F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.1868F, 1.0473F, 4.7733F, -0.4216F, 0.6167F, -0.6553F));
+
+		PartDefinition schnauzer_ear_right_flap2 = schnauzer_ear_right2.addOrReplaceChild("schnauzer_ear_right_flap2", CubeListBuilder.create(), PartPose.offset(0.8517F, -2.1768F, -1.3358F));
+
+		PartDefinition schnauzer_ear_right_flap_rot2 = schnauzer_ear_right_flap2.addOrReplaceChild("schnauzer_ear_right_flap_rot2", CubeListBuilder.create().texOffs(729, 16).mirror().addBox(0.5017F, 2.4884F, -1.3541F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.6894F, 0.0F, 0.0F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -2.35F, -1.5F));
+
+		PartDefinition schnauzer_ear_left2 = left_ear.addOrReplaceChild("schnauzer_ear_left2", CubeListBuilder.create().texOffs(729, 20).addBox(-4.3534F, -1.118F, -3.9635F, 3.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1868F, 1.0473F, 4.7733F, -0.4216F, -0.6167F, 0.6553F));
+
+		PartDefinition schnauzer_ear_left_flap2 = schnauzer_ear_left2.addOrReplaceChild("schnauzer_ear_left_flap2", CubeListBuilder.create(), PartPose.offset(-0.8517F, -2.1768F, -1.3358F));
+
+		PartDefinition schnauzer_ear_left_flap_rot2 = schnauzer_ear_left_flap2.addOrReplaceChild("schnauzer_ear_left_flap_rot2", CubeListBuilder.create().texOffs(729, 16).addBox(-3.5017F, 2.4884F, -1.3541F, 3.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.6894F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_head2 = real_head.addOrReplaceChild("schnauzer_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 3.9F, 0.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_head_neck_full2 = schnauzer_head2.addOrReplaceChild("schnauzer_head_neck_full2", CubeListBuilder.create(), PartPose.offsetAndRotation(1.0F, -1.5F, 4.25F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_head_neck2 = schnauzer_head_neck_full2.addOrReplaceChild("schnauzer_head_neck2", CubeListBuilder.create(), PartPose.offset(-1.0F, 2.85F, 1.35F));
+
+		PartDefinition schnauzer_head_neck_rot2 = schnauzer_head_neck2.addOrReplaceChild("schnauzer_head_neck_rot2", CubeListBuilder.create().texOffs(2305, 0).addBox(-2.0F, -2.1998F, -3.9946F, 4.0F, 6.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.0F, -1.9F, 1.3F, 0.3491F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_head_full2 = schnauzer_head2.addOrReplaceChild("schnauzer_head_full2", CubeListBuilder.create(), PartPose.offset(1.0F, 1.1F, 1.75F));
+
+		PartDefinition schnauzer_head_rot2 = schnauzer_head_full2.addOrReplaceChild("schnauzer_head_rot2", CubeListBuilder.create().texOffs(2326, 19).addBox(-3.5F, -4.5F, -1.8F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F))
+		.texOffs(2320, 18).addBox(-2.5F, -5.25F, -1.1F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -2.0F, 0.5F, -1.5708F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_flappy2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_flappy2", CubeListBuilder.create(), PartPose.offset(-1.0F, -4.25F, -2.3F));
+
+		PartDefinition schnauzer_flappy_rot2 = schnauzer_flappy2.addOrReplaceChild("schnauzer_flappy_rot2", CubeListBuilder.create().texOffs(1850, 0).addBox(-1.5F, 0.1997F, -1.4779F, 3.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.829F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_brow_right2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_brow_right2", CubeListBuilder.create(), PartPose.offset(-2.5F, -3.6F, -2.3F));
+
+		PartDefinition schnauzer_brow_right_rot2 = schnauzer_brow_right2.addOrReplaceChild("schnauzer_brow_right_rot2", CubeListBuilder.create().texOffs(1807, 11).addBox(-0.9891F, -0.7498F, -0.25F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F)), PartPose.offsetAndRotation(-0.2432F, 0.1608F, 0.55F, 0.0F, 0.0F, -0.0436F));
+
+		PartDefinition schnauzer_brow_left2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_brow_left2", CubeListBuilder.create(), PartPose.offset(0.5F, -3.6F, -2.3F));
+
+		PartDefinition schnauzer_brow_left_rot2 = schnauzer_brow_left2.addOrReplaceChild("schnauzer_brow_left_rot2", CubeListBuilder.create().texOffs(1807, 11).mirror().addBox(-1.0109F, -0.7498F, -0.25F, 2.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F)).mirror(false), PartPose.offsetAndRotation(0.25F, 0.15F, 0.55F, 0.0F, 0.0F, 0.0436F));
+
+		PartDefinition schnauzer_pupil_left2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_pupil_left2", CubeListBuilder.create().texOffs(751, 2).addBox(0.9F, -17.35F, 2.13F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+		.texOffs(751, 0).addBox(1.26F, -17.6F, 2.135F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.9F, 14.1F, -4.0F));
+
+		PartDefinition schnauzer_pupil_right2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_pupil_right2", CubeListBuilder.create().texOffs(751, 2).mirror().addBox(-1.9F, -17.35F, 2.13F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(751, 0).mirror().addBox(-2.26F, -17.6F, 2.135F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.1F, 14.1F, -4.0F));
+
+		PartDefinition schnauzer_mouth2 = schnauzer_head_rot2.addOrReplaceChild("schnauzer_mouth2", CubeListBuilder.create().texOffs(2122, 8).addBox(-2.0F, -2.6412F, -0.784F, 4.0F, 2.0F, 5.0F, new CubeDeformation(0.0F))
+		.texOffs(2175, 20).addBox(1.75F, -1.8812F, -0.774F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.01F))
+		.texOffs(2059, 11).addBox(-1.9998F, -1.8914F, -0.7842F, 4.0F, 3.0F, 4.0F, new CubeDeformation(0.02F)), PartPose.offsetAndRotation(-1.0F, 0.86F, -3.5848F, 0.2094F, 0.0F, 0.0F));
+
+		PartDefinition mane_sub_2 = schnauzer_mouth2.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(2175, 20).mirror().addBox(-2.75F, -1.8812F, -0.774F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.01F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_bridge2 = schnauzer_mouth2.addOrReplaceChild("schnauzer_bridge2", CubeListBuilder.create().texOffs(1610, 27).addBox(-1.0F, -0.5825F, -1.4648F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.01F)), PartPose.offsetAndRotation(0.0F, -2.4719F, 2.6553F, 0.3054F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_stache2 = schnauzer_mouth2.addOrReplaceChild("schnauzer_stache2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.403F, -0.5783F, -0.0873F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_beard2 = schnauzer_mouth2.addOrReplaceChild("schnauzer_beard2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.248F, 1.8622F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_mouth_beard2 = schnauzer_beard2.addOrReplaceChild("schnauzer_mouth_beard2", CubeListBuilder.create(), PartPose.offset(0.0F, 1.0394F, -1.7479F));
+
+		PartDefinition schnauzer_mouth_beard_rot2 = schnauzer_mouth_beard2.addOrReplaceChild("schnauzer_mouth_beard_rot2", CubeListBuilder.create().texOffs(1868, 7).addBox(-1.5F, -0.6107F, -0.9191F, 3.0F, 4.0F, 3.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.0F, 0.1F, 0.1F, 0.1309F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_jaw2 = schnauzer_beard2.addOrReplaceChild("schnauzer_jaw2", CubeListBuilder.create().texOffs(1457, 9).addBox(-1.5F, -0.6962F, -0.8961F, 3.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.6833F, -1.7256F));
+
+		PartDefinition bone2 = schnauzer_jaw2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(751, 16).addBox(-1.5F, -0.6466F, 0.0444F, 3.0F, 1.0F, 1.0F, new CubeDeformation(-0.2F)), PartPose.offsetAndRotation(0.0F, -0.0188F, -1.1968F, -0.0349F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_nose2 = schnauzer_mouth2.addOrReplaceChild("schnauzer_nose2", CubeListBuilder.create().texOffs(807, 10).addBox(-0.5F, -0.6507F, 0.5576F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-0.05F, -2.1342F, -1.5958F, -0.1309F, 0.0F, 0.0F));
+
+		PartDefinition schnauzer_nose_only2 = schnauzer_nose2.addOrReplaceChild("schnauzer_nose_only2", CubeListBuilder.create().texOffs(2157, 0).addBox(-1.5F, -1.5215F, -0.797F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.8F)), PartPose.offset(0.0F, -0.0298F, 0.5389F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
 }
