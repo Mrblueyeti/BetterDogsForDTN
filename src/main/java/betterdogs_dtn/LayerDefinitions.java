@@ -2153,9 +2153,9 @@ public class LayerDefinitions {
 		PartDefinition pomeranian_tail_r1 = real_tail.addOrReplaceChild("pomeranian_tail_r1", CubeListBuilder.create().texOffs(1859, 26).addBox(-2.0F, -6.85F, -2.0F, 4.0F, 3.0F, 3.0F, new CubeDeformation(-0.4F))
 		.texOffs(1845, 25).addBox(-2.0F, -4.65F, -2.0F, 4.0F, 4.0F, 3.0F, new CubeDeformation(-0.4F)), PartPose.offsetAndRotation(0.0F, -1.1805F, -0.4719F, -2.618F, 0.0F, 0.0F));
 
-		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create().texOffs(968, 21).mirror().addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.35F, 19.85F, 3.35F));
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create().texOffs(968, 21).mirror().addBox(-0.5F, 1.0F, -2.0F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.35F, 18.85F, 4.85F));
 
-		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create().texOffs(968, 21).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.35F, 19.85F, 3.35F));
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create().texOffs(968, 21).addBox(-0.5F, 1.0F, -2.0F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(1.35F, 18.85F, 4.85F));
 
 		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create().texOffs(968, 21).mirror().addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-1.45F, 20.025F, -3.275F));
 
