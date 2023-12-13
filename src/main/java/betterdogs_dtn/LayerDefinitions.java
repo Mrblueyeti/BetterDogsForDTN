@@ -73,7 +73,7 @@ public class LayerDefinitions {
 
 		PartDefinition borzoi_head_top = borzoi_head_rot.addOrReplaceChild("borzoi_head_top", CubeListBuilder.create().texOffs(1902, 2).mirror().addBox(-3.5F, -1.4039F, 0.5287F, 7.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offsetAndRotation(-0.05F, -22.5632F, -7.875F, -0.48F, 0.0F, 0.0F));
 
-		PartDefinition borzoi_neck = borzoi_head_rot.addOrReplaceChild("borzoi_neck", CubeListBuilder.create().texOffs(2089, 1).addBox(-2.0F, -1.2815F, -3.9672F, 3.0F, 6.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.5F, -18.85F, -6.4F, 0.3491F, 0.0F, 0.0F));
+		PartDefinition borzoi_neck = borzoi_head_rot.addOrReplaceChild("borzoi_neck", CubeListBuilder.create().texOffs(2089, 1).addBox(-2.0F, -1.2815F, -3.9672F, 3.0F, 5.0F, 5.0F, new CubeDeformation(-0.1F)), PartPose.offsetAndRotation(0.5F, -18.85F, -6.4F, 0.3491F, 0.0F, 0.0F));
 
 		PartDefinition borzoi_eye_right = borzoi_head_rot.addOrReplaceChild("borzoi_eye_right", CubeListBuilder.create().texOffs(1569, 23).addBox(-1.15F, 0.25F, -0.3F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F)), PartPose.offset(-1.3084F, -22.4931F, -10.85F));
 
@@ -2089,13 +2089,13 @@ public class LayerDefinitions {
 
 		PartDefinition bone2 = jackrussel_tail2.addOrReplaceChild("bone2", CubeListBuilder.create().texOffs(336, 6).addBox(-1.0F, -6.7861F, -13.0094F, 2.0F, 5.0F, 2.0F, new CubeDeformation(-0.105F)), PartPose.offsetAndRotation(0.0F, -4.1877F, -0.7674F, 0.6981F, 0.0F, 0.0F));
 
-		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, 7.0F));
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-1.5F, 18.0F, 7.5F));
 
-		PartDefinition mane_sub_5 = right_hind_leg.addOrReplaceChild("mane_sub_5", CubeListBuilder.create().texOffs(925, 2).addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.0F, -11.5F));
+		PartDefinition mane_sub_5 = right_hind_leg.addOrReplaceChild("mane_sub_5", CubeListBuilder.create().texOffs(925, 2).addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.0F, -12.0F));
 
-		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, 7.0F));
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(1.5F, 18.0F, 7.5F));
 
-		PartDefinition mane_sub_4 = left_hind_leg.addOrReplaceChild("mane_sub_4", CubeListBuilder.create().texOffs(925, 2).mirror().addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 5.0F, -11.5F));
+		PartDefinition mane_sub_4 = left_hind_leg.addOrReplaceChild("mane_sub_4", CubeListBuilder.create().texOffs(925, 2).mirror().addBox(-1.0F, -4.0F, 9.5F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 5.0F, -12.0F));
 
 		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-1.25F, 19.0F, -3.5F));
 
@@ -2105,21 +2105,21 @@ public class LayerDefinitions {
 
 		PartDefinition mane_sub_2 = left_front_leg.addOrReplaceChild("mane_sub_2", CubeListBuilder.create().texOffs(925, 0).mirror().addBox(-1.0F, 3.5F, 0.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.25F, -5.5F, -1.0F));
 
-		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(1670, 0).addBox(-2.5F, -3.5F, -1.5F, 5.0F, 7.0F, 5.0F, new CubeDeformation(0.04F)), PartPose.offsetAndRotation(0.0F, 18.55F, 3.55F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(1670, 0).addBox(-2.5F, -3.75F, -1.5F, 5.0F, 7.0F, 5.0F, new CubeDeformation(0.04F)), PartPose.offsetAndRotation(0.0F, 18.8F, 3.55F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 17.5F, -2.5F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition jack_russel_mane2 = upper_body.addOrReplaceChild("jack_russel_mane2", CubeListBuilder.create().texOffs(1648, 3).addBox(-2.5F, -12.75F, -9.55F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.05F)), PartPose.offset(0.0F, 9.5F, 6.5F));
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -6.5F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 15.5F, -5.5F));
 
 		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create().texOffs(156, 25).mirror().addBox(-1.0434F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offsetAndRotation(2.1508F, -1.6731F, 0.688F, 2.9621F, -1.4798F, -1.8075F));
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create().texOffs(156, 25).mirror().addBox(-1.0434F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offsetAndRotation(2.1508F, -2.6293F, -0.354F, 2.9621F, -1.4798F, -1.8075F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create().texOffs(156, 25).addBox(-0.9566F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-2.1508F, -1.6731F, 0.688F, 2.9621F, 1.4798F, 1.8075F));
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create().texOffs(156, 25).addBox(-0.9566F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-2.1508F, -2.6293F, -0.354F, 2.9621F, 1.4798F, 1.8075F));
 
-		PartDefinition Jackrussel_head2 = real_head.addOrReplaceChild("Jackrussel_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.45F, 2.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition Jackrussel_head2 = real_head.addOrReplaceChild("Jackrussel_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.4938F, 0.958F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition Jackrussel_head_rot_r1 = Jackrussel_head2.addOrReplaceChild("Jackrussel_head_rot_r1", CubeListBuilder.create().texOffs(1634, 0).addBox(-2.5F, -14.55F, 1.0F, 5.0F, 4.0F, 5.0F, new CubeDeformation(0.0F))
 		.texOffs(115, 26).addBox(-1.8F, -13.3701F, 0.9456F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
@@ -2130,7 +2130,7 @@ public class LayerDefinitions {
 		PartDefinition mond2 = Jackrussel_head2.addOrReplaceChild("mond2", CubeListBuilder.create().texOffs(0, 7).addBox(-1.5F, -1.868F, -1.5657F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-1.03F)), PartPose.offsetAndRotation(0.0F, -5.4319F, 0.3408F, -1.3963F, 0.0F, 0.0F));
 
 		PartDefinition bone4 = mond2.addOrReplaceChild("bone4", CubeListBuilder.create().texOffs(58, 0).addBox(-1.5F, -0.4101F, -1.8206F, 3.0F, 2.0F, 4.0F, new CubeDeformation(-0.3F))
-		.texOffs(112, 23).addBox(-0.5F, -0.1201F, -1.1243F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.6856F, 1.0921F, 0.0436F, 0.0F, 0.0F));
+		.texOffs(112, 23).addBox(-0.5F, -0.1201F, -1.1243F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.6856F, 1.092F, 0.0436F, 0.0F, 0.0F));
 
 		PartDefinition bone5 = bone4.addOrReplaceChild("bone5", CubeListBuilder.create().texOffs(58, 5).addBox(-1.5F, -0.8518F, -1.9449F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.31F))
 		.texOffs(28, 25).addBox(-1.49F, -0.4818F, -1.9549F, 3.0F, 1.0F, 4.0F, new CubeDeformation(-0.32F)), PartPose.offset(0.0F, 1.7917F, 0.1242F));
