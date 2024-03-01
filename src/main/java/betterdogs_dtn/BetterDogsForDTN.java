@@ -1,31 +1,29 @@
 package betterdogs_dtn;
 import org.joml.Vector3f;
 
+import betterdogs_dtn.forge_imitate.event.EntityRenderersEvent.RegisterLayerDefinitions;
 import betterdogs_dtn.models.BDWolf;
 import betterdogs_dtn.models.Cerberus;
 import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
+import doggytalents.api.fabric_helper.entry.DogModelConfiguationRegistry.Context;
+import doggytalents.api.fabric_helper.entry.DogModelConfigurationEntry;
+import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(Constants.MOD_ID)
-public class BetterDogsForDTN {
+//@Mod(Constants.MOD_ID)
+public class BetterDogsForDTN implements DogModelConfigurationEntry {
 
-    public BetterDogsForDTN() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-            modEventBus.addListener(BetterDogsForDTN::registeringSkin);
-            modEventBus.addListener(BetterDogsForDTN::registeringSkinJson);
-            modEventBus.addListener(BetterDogsForDTN::registerLayerDefinition);
-        });
+    // public BetterDogsForDTN() {
+    //     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+    //     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+    //         modEventBus.addListener(BetterDogsForDTN::registeringSkin);
+    //         modEventBus.addListener(BetterDogsForDTN::registeringSkinJson);
+    //         modEventBus.addListener(BetterDogsForDTN::registerLayerDefinition);
+    //     });
 
-    }
+    // }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
         event.register(new Builder(getRes("borzoi"), ModelLayerLocations.BORZOI));
@@ -113,6 +111,13 @@ public class BetterDogsForDTN {
 
     public static ResourceLocation getRes(String name) {
         return new ResourceLocation(Constants.MOD_ID, name);
+    }
+
+    @Override
+    public void onGatherDogModel(Context ctx) {
+        registerLayerDefinition(new RegisterLayerDefinitions());
+        registeringSkinJson(ctx.skinJsonEvent());
+        registeringSkin(ctx.propsEvent());
     }
     
 }
