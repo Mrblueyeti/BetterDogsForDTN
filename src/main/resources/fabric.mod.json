@@ -29,6 +29,7 @@
     },
   
     "depends": {
+      "doggytalents": ">=1.18.9",
       "fabricloader": ">=0.15.7",
       "fabric-api": "*",
       "minecraft": "~1.20",
