@@ -3161,4 +3161,196 @@ public class LayerDefinitions {
 
 		return LayerDefinition.create(meshdefinition, 3002, 32);
 	}
+	public static LayerDefinition komondor() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition tail = partdefinition.addOrReplaceChild("tail", CubeListBuilder.create(), PartPose.offset(0.0F, 12.0F, 8.0F));
+
+		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition komondor_tail = real_tail.addOrReplaceChild("komondor_tail", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.6981F, 0.0F, 0.0F));
+
+		PartDefinition komondor_tail_rot = komondor_tail.addOrReplaceChild("komondor_tail_rot", CubeListBuilder.create().texOffs(2429, 18).addBox(-2.0F, -2.0F, -4.0F, 4.0F, 4.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.1174F, 1.6091F, 0.2035F, -0.1302F, 1.483F, 1.4416F));
+
+		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.0F, 17.9F, 6.8F));
+
+		PartDefinition komondor_leg4 = right_hind_leg.addOrReplaceChild("komondor_leg4", CubeListBuilder.create().texOffs(2411, 20).mirror().addBox(-1.25F, -2.3F, -5.1F, 3.0F, 4.0F, 6.0F, new CubeDeformation(-0.05F)).mirror(false), PartPose.offsetAndRotation(-0.25F, 0.9F, -0.7F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition left_hind_leg = partdefinition.addOrReplaceChild("left_hind_leg", CubeListBuilder.create(), PartPose.offset(2.0F, 17.9F, 6.8F));
+
+		PartDefinition komondor_leg3 = left_hind_leg.addOrReplaceChild("komondor_leg3", CubeListBuilder.create().texOffs(2411, 20).addBox(-1.5F, -2.0F, -7.0F, 3.0F, 4.0F, 6.0F, new CubeDeformation(-0.05F)), PartPose.offsetAndRotation(0.0F, -1.0F, -1.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition right_front_leg = partdefinition.addOrReplaceChild("right_front_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 17.75F, -2.25F));
+
+		PartDefinition komondor_leg2 = right_front_leg.addOrReplaceChild("komondor_leg2", CubeListBuilder.create().texOffs(2411, 20).mirror().addBox(-1.25F, -6.3F, -19.1F, 3.0F, 4.0F, 6.0F, new CubeDeformation(-0.05F)).mirror(false), PartPose.offsetAndRotation(-0.25F, -12.95F, 4.35F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition left_front_leg = partdefinition.addOrReplaceChild("left_front_leg", CubeListBuilder.create(), PartPose.offset(2.5F, 17.75F, -2.25F));
+
+		PartDefinition komondor_leg1 = left_front_leg.addOrReplaceChild("komondor_leg1", CubeListBuilder.create().texOffs(2411, 20).addBox(-1.75F, -2.05F, -5.1F, 3.0F, 4.0F, 6.0F, new CubeDeformation(-0.05F)), PartPose.offsetAndRotation(0.25F, 1.05F, 0.1F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 16.4F, 4.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition komondor_body_sit = body.addOrReplaceChild("komondor_body_sit", CubeListBuilder.create(), PartPose.offset(0.0F, 9.75F, 4.75F));
+
+		PartDefinition komondor_body = komondor_body_sit.addOrReplaceChild("komondor_body", CubeListBuilder.create().texOffs(2445, 11).addBox(-4.0F, -13.45F, -2.85F, 8.0F, 8.0F, 7.0F, new CubeDeformation(0.0F))
+		.texOffs(2450, 16).addBox(-4.0F, -10.45F, -4.85F, 8.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.4591F, -3.0914F));
+
+		PartDefinition komondor_body_rasta_left = komondor_body.addOrReplaceChild("komondor_body_rasta_left", CubeListBuilder.create(), PartPose.offsetAndRotation(4.0F, 4.4409F, 3.3414F, 0.0F, -0.1309F, 0.0F));
+
+		PartDefinition komondor_body_rasta_left1 = komondor_body_rasta_left.addOrReplaceChild("komondor_body_rasta_left1", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.8562F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.132F, 0.0F, -0.6372F));
+
+		PartDefinition komondor_body_rasta_left2 = komondor_body_rasta_left.addOrReplaceChild("komondor_body_rasta_left2", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.8431F, -11.85F, -1.8079F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.3017F, -4.0F, -1.9261F));
+
+		PartDefinition komondor_body_rasta_left3 = komondor_body_rasta_left.addOrReplaceChild("komondor_body_rasta_left3", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.8562F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.6933F, -3.0F, -4.9004F));
+
+		PartDefinition komondor_body_rasta_left4 = komondor_body_rasta_left.addOrReplaceChild("komondor_body_rasta_left4", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.8431F, -11.85F, -1.8079F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.5628F, -1.0F, -3.909F));
+
+		PartDefinition komondor_body_rasta_left5 = komondor_body_rasta_left.addOrReplaceChild("komondor_body_rasta_left5", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.8562F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.9543F, 0.0F, -6.8833F));
+
+		PartDefinition komondor_body_rasta_right = komondor_body.addOrReplaceChild("komondor_body_rasta_right", CubeListBuilder.create(), PartPose.offsetAndRotation(-4.0F, 4.4409F, 3.3414F, 0.0F, 0.1309F, 0.0F));
+
+		PartDefinition komondor_body_rasta_right1 = komondor_body_rasta_right.addOrReplaceChild("komondor_body_rasta_right1", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.1438F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.132F, 0.0F, -0.6372F));
+
+		PartDefinition komondor_body_rasta_right2 = komondor_body_rasta_right.addOrReplaceChild("komondor_body_rasta_right2", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.1569F, -11.85F, -1.8079F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.3017F, -4.0F, -1.9261F));
+
+		PartDefinition komondor_body_rasta_right3 = komondor_body_rasta_right.addOrReplaceChild("komondor_body_rasta_right3", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.1438F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.6933F, -3.0F, -4.9004F));
+
+		PartDefinition komondor_body_rasta_right4 = komondor_body_rasta_right.addOrReplaceChild("komondor_body_rasta_right4", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.1569F, -11.85F, -1.8079F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5628F, -1.0F, -3.909F));
+
+		PartDefinition komondor_body_rasta_right5 = komondor_body_rasta_right.addOrReplaceChild("komondor_body_rasta_right5", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.1438F, -11.85F, -1.907F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.9543F, 0.0F, -6.8833F));
+
+		PartDefinition komondor_body_hair = komondor_body.addOrReplaceChild("komondor_body_hair", CubeListBuilder.create().texOffs(2517, 20).addBox(2.9F, -18.4909F, -3.9414F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(2475, 18).addBox(-4.0F, -16.4909F, -5.6914F, 8.0F, 5.0F, 3.0F, new CubeDeformation(-0.15F)), PartPose.offset(0.0F, 6.1409F, -1.9086F));
+
+		PartDefinition mane_sub_794 = komondor_body_hair.addOrReplaceChild("mane_sub_794", CubeListBuilder.create().texOffs(2517, 20).mirror().addBox(-3.9F, -18.4909F, -3.9414F, 1.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition komondor_pant = upper_body.addOrReplaceChild("komondor_pant", CubeListBuilder.create(), PartPose.offset(1.0F, 3.65F, 0.0F));
+
+		PartDefinition komondor_mane = komondor_pant.addOrReplaceChild("komondor_mane", CubeListBuilder.create().texOffs(2468, 1).addBox(-4.5F, 5.15F, -19.0F, 9.0F, 7.0F, 10.0F, new CubeDeformation(-0.05F)), PartPose.offset(0.0F, -11.0F, 13.0F));
+
+		PartDefinition komondor_mane_hair = komondor_mane.addOrReplaceChild("komondor_mane_hair", CubeListBuilder.create().texOffs(2496, 1).addBox(-4.5F, -4.2F, -20.8F, 9.0F, 7.0F, 3.0F, new CubeDeformation(-0.15F)), PartPose.offset(0.0F, 9.35F, -1.0F));
+
+		PartDefinition komondor_mane_rasta = komondor_mane.addOrReplaceChild("komondor_mane_rasta", CubeListBuilder.create(), PartPose.offset(3.0F, 9.35F, 0.0F));
+
+		PartDefinition komondor_mane_rasta_right = komondor_mane_rasta.addOrReplaceChild("komondor_mane_rasta_right", CubeListBuilder.create(), PartPose.offsetAndRotation(-7.5F, -8.7F, 3.5F, 0.0F, 0.1309F, 0.0F));
+
+		PartDefinition komondor_mane_rasta_right1 = komondor_mane_rasta_right.addOrReplaceChild("komondor_mane_rasta_right1", CubeListBuilder.create().texOffs(2470, 7).addBox(1.7214F, 9.5F, -16.8413F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.179F, -2.0F, -0.2276F));
+
+		PartDefinition komondor_mane_rasta_right2 = komondor_mane_rasta_right.addOrReplaceChild("komondor_mane_rasta_right2", CubeListBuilder.create().texOffs(2470, 7).addBox(1.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.7011F, -2.0F, -4.1934F));
+
+		PartDefinition komondor_mane_rasta_right3 = komondor_mane_rasta_right.addOrReplaceChild("komondor_mane_rasta_right3", CubeListBuilder.create().texOffs(2470, 7).addBox(1.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.44F, -4.0F, -2.2105F));
+
+		PartDefinition komondor_mane_rasta_right4 = komondor_mane_rasta_right.addOrReplaceChild("komondor_mane_rasta_right4", CubeListBuilder.create().texOffs(2470, 7).addBox(1.7606F, 10.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.9621F, -4.0F, -6.1763F));
+
+		PartDefinition komondor_mane_rasta_right5 = komondor_mane_rasta_right.addOrReplaceChild("komondor_mane_rasta_right5", CubeListBuilder.create().texOffs(2470, 7).addBox(1.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.5705F, 0.0F, -3.2019F));
+
+		PartDefinition komondor_mane_rasta_left = komondor_mane_rasta.addOrReplaceChild("komondor_mane_rasta_left", CubeListBuilder.create(), PartPose.offsetAndRotation(1.5F, -8.7F, 3.5F, 0.0F, -0.1309F, 0.0F));
+
+		PartDefinition komondor_mane_rasta_left1 = komondor_mane_rasta_left.addOrReplaceChild("komondor_mane_rasta_left1", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-2.7214F, 9.5F, -16.8413F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.179F, -2.0F, -0.2276F));
+
+		PartDefinition komondor_mane_rasta_left2 = komondor_mane_rasta_left.addOrReplaceChild("komondor_mane_rasta_left2", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-2.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.7011F, -2.0F, -4.1934F));
+
+		PartDefinition komondor_mane_rasta_left3 = komondor_mane_rasta_left.addOrReplaceChild("komondor_mane_rasta_left3", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-2.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.44F, -4.0F, -2.2105F));
+
+		PartDefinition komondor_mane_rasta_left4 = komondor_mane_rasta_left.addOrReplaceChild("komondor_mane_rasta_left4", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-2.7606F, 10.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.9621F, -4.0F, -6.1763F));
+
+		PartDefinition komondor_mane_rasta_left5 = komondor_mane_rasta_left.addOrReplaceChild("komondor_mane_rasta_left5", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-2.7606F, 9.5F, -17.1387F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.5705F, 0.0F, -3.2019F));
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 10.5F, -6.25F));
+
+		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create().texOffs(16, 14).addBox(0.5F, 0.5F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-3.5F, -2.5F, 0.25F));
+
+		PartDefinition komondor_ear_right = right_ear.addOrReplaceChild("komondor_ear_right", CubeListBuilder.create().texOffs(554, 8).addBox(-1.0F, -2.0642F, -5.231F, 2.0F, 5.0F, 6.0F, new CubeDeformation(0.0F))
+		.texOffs(604, 21).addBox(-1.0F, -2.0642F, -10.231F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.7567F, -0.1525F, 1.4835F, 0.0F, 0.0F));
+
+		PartDefinition komondor_ear_right_rasta = komondor_ear_right.addOrReplaceChild("komondor_ear_right_rasta", CubeListBuilder.create(), PartPose.offset(6.5F, 19.3782F, -5.4276F));
+
+		PartDefinition komondor_ear_right_rasta_rot = komondor_ear_right_rasta.addOrReplaceChild("komondor_ear_right_rasta_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(-7.5F, -8.7F, 3.5F, 0.0F, 0.1309F, 0.0F));
+
+		PartDefinition komondor_ear_right_rasta1 = komondor_ear_right_rasta_rot.addOrReplaceChild("komondor_ear_right_rasta1", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.305F, -8.7852F, -0.2832F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.073F, -2.0F, -0.5887F));
+
+		PartDefinition komondor_ear_right_rasta2 = komondor_ear_right_rasta_rot.addOrReplaceChild("komondor_ear_right_rasta2", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.305F, -8.7852F, -0.2832F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.373F, -4.0F, -3.0887F));
+
+		PartDefinition komondor_ear_right_rasta3 = komondor_ear_right_rasta_rot.addOrReplaceChild("komondor_ear_right_rasta3", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.305F, -8.7852F, -0.2832F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.673F, -2.0F, -5.0887F));
+
+		PartDefinition komondor_ear_right_rasta4 = komondor_ear_right_rasta_rot.addOrReplaceChild("komondor_ear_right_rasta4", CubeListBuilder.create().texOffs(2470, 7).addBox(-0.305F, -8.7852F, -0.2832F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.492F, 0.0298F, -3.7708F));
+
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create().texOffs(16, 14).addBox(-2.5F, 0.5F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(3.5F, -2.5F, 0.25F));
+
+		PartDefinition komondor_ear_left = left_ear.addOrReplaceChild("komondor_ear_left", CubeListBuilder.create().texOffs(554, 8).mirror().addBox(-0.9F, -2.2211F, -5.1878F, 2.0F, 5.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(604, 21).mirror().addBox(-0.9F, -2.2211F, -10.1878F, 2.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-0.1F, -0.7F, 0.0F, 1.4835F, 0.0F, 0.0F));
+
+		PartDefinition komondor_ear_left_rasta = komondor_ear_left.addOrReplaceChild("komondor_ear_left_rasta", CubeListBuilder.create(), PartPose.offset(-6.4F, 10.9405F, -3.0975F));
+
+		PartDefinition komondor_ear_left_rasta_rot = komondor_ear_left_rasta.addOrReplaceChild("komondor_ear_left_rasta_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(7.5F, -8.7F, 3.5F, 0.0F, -0.1309F, 0.0F));
+
+		PartDefinition komondor_ear_left_rasta1 = komondor_ear_left_rasta_rot.addOrReplaceChild("komondor_ear_left_rasta1", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.9935F, -0.5044F, -2.5506F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.073F, -2.0F, -0.5887F));
+
+		PartDefinition komondor_ear_left_rasta2 = komondor_ear_left_rasta_rot.addOrReplaceChild("komondor_ear_left_rasta2", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.9935F, -0.5044F, -2.5506F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.373F, -4.0F, -3.0887F));
+
+		PartDefinition komondor_ear_left_rasta3 = komondor_ear_left_rasta_rot.addOrReplaceChild("komondor_ear_left_rasta3", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.9935F, -0.5044F, -2.5506F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.673F, -2.0F, -5.0887F));
+
+		PartDefinition komondor_ear_left_rasta4 = komondor_ear_left_rasta_rot.addOrReplaceChild("komondor_ear_left_rasta4", CubeListBuilder.create().texOffs(2470, 7).mirror().addBox(-0.9935F, -0.5044F, -2.5506F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-0.492F, 0.0299F, -3.7708F));
+
+		PartDefinition komondor_head = real_head.addOrReplaceChild("komondor_head", CubeListBuilder.create().texOffs(602, 3).addBox(-3.5F, -5.0F, 0.25F, 7.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
+		.texOffs(551, 19).addBox(-3.5F, -5.0F, -4.75F, 7.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 2.0F, 2.75F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition komondor_cheeks = komondor_head.addOrReplaceChild("komondor_cheeks", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -5.75F, 0.6F, 0.0873F, 0.0F, 0.0F));
+
+		PartDefinition komondor_cheek_right = komondor_cheeks.addOrReplaceChild("komondor_cheek_right", CubeListBuilder.create().texOffs(610, 4).addBox(-3.0F, -18.7955F, 3.3083F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.0F))
+		.texOffs(639, 9).addBox(-3.0F, -18.7955F, 1.3083F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 18.25F, -4.1F));
+
+		PartDefinition komondor_cheek_left = komondor_cheeks.addOrReplaceChild("komondor_cheek_left", CubeListBuilder.create().texOffs(610, 4).mirror().addBox(1.0F, -0.5455F, -0.7917F, 2.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false)
+		.texOffs(639, 9).mirror().addBox(1.0F, -0.5455F, -2.7917F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition komondor_eyes = komondor_head.addOrReplaceChild("komondor_eyes", CubeListBuilder.create().texOffs(631, 9).addBox(1.5F, -17.7F, 4.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)), PartPose.offset(0.0F, 12.5F, -1.75F));
+
+		PartDefinition mane_sub_742 = komondor_eyes.addOrReplaceChild("mane_sub_742", CubeListBuilder.create().texOffs(631, 9).mirror().addBox(-2.5F, -17.7F, 4.75F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F)).mirror(false), PartPose.offset(0.0F, 0.0F, 0.0F));
+
+		PartDefinition komondor_hair = komondor_head.addOrReplaceChild("komondor_hair", CubeListBuilder.create().texOffs(569, 19).addBox(-3.5F, 0.1505F, -6.875F, 7.0F, 1.0F, 6.0F, new CubeDeformation(0.02F)), PartPose.offsetAndRotation(0.0F, -4.9F, 7.15F, -0.2618F, 0.0F, 0.0F));
+
+		PartDefinition komondor_snout = komondor_head.addOrReplaceChild("komondor_snout", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -5.25F, 2.6F, -1.5621F, 0.0F, 0.0F));
+
+		PartDefinition betterdogs_jaw = komondor_snout.addOrReplaceChild("betterdogs_jaw", CubeListBuilder.create(), PartPose.offset(0.0F, 0.7647F, 2.0155F));
+
+		PartDefinition betterdogs_tongue_rot = betterdogs_jaw.addOrReplaceChild("betterdogs_tongue_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.5098F, -0.66F, 0.0F, 0.0331F, -0.0118F));
+
+		PartDefinition betterdogs_tongue = betterdogs_tongue_rot.addOrReplaceChild("betterdogs_tongue", CubeListBuilder.create(), PartPose.offset(0.1594F, -0.3742F, -4.4065F));
+
+		PartDefinition betterdogs_tongue_size = betterdogs_tongue.addOrReplaceChild("betterdogs_tongue_size", CubeListBuilder.create(), PartPose.offset(0.0437F, -0.906F, -0.9948F));
+
+		PartDefinition bordercollie_tongue2 = betterdogs_tongue_size.addOrReplaceChild("bordercollie_tongue2", CubeListBuilder.create(), PartPose.offset(0.2473F, 0.1107F, -0.083F));
+
+		PartDefinition bordercollie_tongue_rot2 = bordercollie_tongue2.addOrReplaceChild("bordercollie_tongue_rot2", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.0515F, 2.6279F, -0.0562F, 0.6109F, 0.0F, 0.0F));
+
+		PartDefinition bordercollie_tongue_walk2 = bordercollie_tongue_rot2.addOrReplaceChild("bordercollie_tongue_walk2", CubeListBuilder.create(), PartPose.offset(0.0F, -2.25F, 2.6F));
+
+		PartDefinition komondor_jaw = betterdogs_jaw.addOrReplaceChild("komondor_jaw", CubeListBuilder.create(), PartPose.offset(-0.0095F, -0.1497F, -0.0562F));
+
+		PartDefinition komondor_jaw_rot = komondor_jaw.addOrReplaceChild("komondor_jaw_rot", CubeListBuilder.create().texOffs(624, 5).addBox(-1.4897F, 0.5026F, -5.5087F, 3.0F, 1.0F, 3.0F, new CubeDeformation(-0.05F)), PartPose.offsetAndRotation(0.0F, 0.55F, 2.7F, 0.1047F, -0.003F, -0.0002F));
+
+		PartDefinition komondor_tongue_rot = komondor_jaw_rot.addOrReplaceChild("komondor_tongue_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0103F, 1.2526F, -5.5087F, 0.5236F, 0.0F, 0.0F));
+
+		PartDefinition komondor_tongue = komondor_tongue_rot.addOrReplaceChild("komondor_tongue", CubeListBuilder.create().texOffs(609, 15).addBox(-1.0F, -1.2804F, -1.6905F, 2.0F, 1.0F, 3.0F, new CubeDeformation(-0.05F)), PartPose.offset(0.0F, 0.5F, 1.0F));
+
+		PartDefinition komondor_goatee = komondor_jaw_rot.addOrReplaceChild("komondor_goatee", CubeListBuilder.create().texOffs(639, 9).mirror().addBox(-1.0568F, -0.4247F, -1.4175F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0172F, 2.0351F, -5.034F, 1.5708F, 0.0F, 0.0F));
+
+		PartDefinition komondor_nose = komondor_snout.addOrReplaceChild("komondor_nose", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, -1.3598F, -0.72F, -0.0611F, 0.0F, 0.0F));
+
+		PartDefinition komondor_nose_rot = komondor_nose.addOrReplaceChild("komondor_nose_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.065F, 0.1075F, 0.0436F, 0.0F, 0.0F));
+
+		PartDefinition komondor_nose_subrot = komondor_nose_rot.addOrReplaceChild("komondor_nose_subrot", CubeListBuilder.create().texOffs(613, 20).addBox(-1.5F, -0.7699F, -1.3734F, 3.0F, 3.0F, 3.0F, new CubeDeformation(-0.7F)), PartPose.offsetAndRotation(0.0F, 1.0593F, 0.1664F, -0.0873F, 0.0F, 0.0F));
+
+		PartDefinition komondor_uplip = komondor_snout.addOrReplaceChild("komondor_uplip", CubeListBuilder.create(), PartPose.offsetAndRotation(-0.5F, 0.7416F, 1.3897F, -0.2618F, 0.0F, 0.0F));
+
+		PartDefinition komondor_uplip_rot = komondor_uplip.addOrReplaceChild("komondor_uplip_rot", CubeListBuilder.create().texOffs(596, 4).addBox(-1.5F, -1.3922F, -1.8837F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.5F, 0.5862F, -0.2234F, 0.2443F, 0.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 3002, 32);
+	}
+
 }

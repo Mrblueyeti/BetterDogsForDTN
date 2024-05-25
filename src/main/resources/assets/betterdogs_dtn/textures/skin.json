@@ -708,6 +708,13 @@
             "author" : "MrBlueYeti"
         },
         {
+            "skin_name" : "Better Dogs - Komondor",
+            "skin_id" : "betterdogs_dtn:textures/komondor",
+            "use_model" : "betterdogs_dtn:komondor",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"
+        },
+        {
             "skin_name" : "Better Dogs - Husky (Black) #1",
             "skin_id" : "betterdogs_dtn:textures/husky_black_var1",
             "use_model" : "betterdogs_dtn:husky",
