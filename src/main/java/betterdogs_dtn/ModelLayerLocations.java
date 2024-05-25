@@ -39,4 +39,5 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation SHIBA_INU = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "shiba_inu"), "main");
     public static final ModelLayerLocation CERBERUS = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "cerberus"), "main");
     public static final ModelLayerLocation SCHNAUZER = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "schnauzer"), "main");
+    public static final ModelLayerLocation KOMONDOR = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "komondor"), "main");
 }
