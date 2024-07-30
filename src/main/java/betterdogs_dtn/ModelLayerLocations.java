@@ -40,4 +40,6 @@ public class ModelLayerLocations {
     public static final ModelLayerLocation CERBERUS = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "cerberus"), "main");
     public static final ModelLayerLocation SCHNAUZER = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "schnauzer"), "main");
     public static final ModelLayerLocation KOMONDOR = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "komondor"), "main");
+    public static final ModelLayerLocation SAMOYED_NEW = new ModelLayerLocation(new ResourceLocation(Constants.MOD_ID, "samoyed_new"), "main");
+
 }

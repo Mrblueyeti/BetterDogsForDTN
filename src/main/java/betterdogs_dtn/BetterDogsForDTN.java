@@ -68,6 +68,7 @@ public class BetterDogsForDTN {
             .withGlowingEyes());
         event.register(new Builder(getRes("schnauzer"), ModelLayerLocations.SCHNAUZER));          
         event.register(new Builder(getRes("komondor"), ModelLayerLocations.KOMONDOR));          
+        event.register(new Builder(getRes("samoyed_new"), ModelLayerLocations.SAMOYED_NEW));          
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
@@ -111,6 +112,7 @@ public class BetterDogsForDTN {
         event.registerLayerDefinition(ModelLayerLocations.CERBERUS, Cerberus::createBodyLayer);
         event.registerLayerDefinition(ModelLayerLocations.SCHNAUZER, LayerDefinitions::schnauzer);
         event.registerLayerDefinition(ModelLayerLocations.KOMONDOR, LayerDefinitions::komondor);
+        event.registerLayerDefinition(ModelLayerLocations.SAMOYED_NEW, LayerDefinitions::samoyed_new);
    }
 
     public static ResourceLocation getRes(String name) {

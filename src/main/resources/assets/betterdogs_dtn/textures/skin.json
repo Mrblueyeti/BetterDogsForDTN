@@ -673,18 +673,34 @@
             "author" : "MrBlueYeti"
         },
         {
-            "skin_name" : "Better Dogs - Samoyed (White)",
+            "skin_name" : "Better Dogs - Samoyed (Mouth Closed)",
+            "skin_id" : "betterdogs_dtn:textures/samoyed_mouth_closed",
+            "use_model" : "betterdogs_dtn:samoyed_new",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"  
+        },
+        {
+            "skin_name" : "Better Dogs - Samoyed (Panting)",
+            "skin_id" : "betterdogs_dtn:textures/samoyed_panting",
+            "use_model" : "betterdogs_dtn:samoyed_new",
+            "based_on" : "The Better Dogs Resources Pack.",
+            "author" : "MrBlueYeti"  
+        },
+        {
+            "skin_name" : "Better Dogs - Samoyed (White Legacy)",
             "skin_id" : "betterdogs_dtn:textures/samoyed_white",
             "use_model" : "betterdogs_dtn:samoyed",
             "based_on" : "The Better Dogs Resources Pack.",
-            "author" : "MrBlueYeti"
+            "author" : "MrBlueYeti",
+            "mystery" : true
         },
         {
-            "skin_name" : "Better Dogs - Samoyed (Yellow)",
+            "skin_name" : "Better Dogs - Samoyed (Yellow Legacy)",
             "skin_id" : "betterdogs_dtn:textures/samoyed_yellow",
             "use_model" : "betterdogs_dtn:samoyed",
             "based_on" : "The Better Dogs Resources Pack.",
-            "author" : "MrBlueYeti"
+            "author" : "MrBlueYeti",
+            "mystery" : true
         },
         {
             "skin_name" : "Better Dogs - Standard Schnauzer (Black Tan)",
