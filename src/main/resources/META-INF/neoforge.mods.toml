@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="${neofml_version_range}"
 license="All Right Reserved"
 issueTrackerURL=""
 displayURL=""
@@ -13,22 +13,22 @@ logoFile="bd_dtn_banner.png"
     authors="MrBlueYeti"
     description="The Better Dogs resource packs, now for Doggy Talents Next."
 [[dependencies.betterdogs_dtn]] #optional
-    modId="forge"
-    mandatory=true
-    versionRange="[40.0.18,)" #mandatory
+    modId="neoforge"
+    type="required"
+    versionRange="[20.5,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.betterdogs_dtn]]
     modId="minecraft"
-    mandatory=true
+    type="required"
     versionRange="[1.18.2,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.betterdogs_dtn]]
     modId="doggytalents"
-    mandatory=true
+    type="required"
     versionRange="[1.17.0,)"
     ordering="NONE"
     side="BOTH"

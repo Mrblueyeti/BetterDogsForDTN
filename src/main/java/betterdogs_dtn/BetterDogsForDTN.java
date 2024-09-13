@@ -7,23 +7,23 @@ import doggytalents.api.events.RegisterCustomDogModelsEvent;
 import doggytalents.api.events.RegisterDogSkinJsonPathEvent;
 import doggytalents.api.events.RegisterCustomDogModelsEvent.DogModelProps.Builder;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent.RegisterLayerDefinitions;
 
 @Mod(Constants.MOD_ID)
 public class BetterDogsForDTN {
 
     public BetterDogsForDTN() {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+        IEventBus modEventBus = ModLoadingContext.get().getActiveContainer().getEventBus();
+        if (FMLEnvironment.dist == Dist.CLIENT) {
             modEventBus.addListener(BetterDogsForDTN::registeringSkin);
             modEventBus.addListener(BetterDogsForDTN::registeringSkinJson);
             modEventBus.addListener(BetterDogsForDTN::registerLayerDefinition);
-        });
+        };
 
     }
 
@@ -116,7 +116,7 @@ public class BetterDogsForDTN {
    }
 
     public static ResourceLocation getRes(String name) {
-        return new ResourceLocation(Constants.MOD_ID, name);
+        return ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, name);
     }
     
 }
