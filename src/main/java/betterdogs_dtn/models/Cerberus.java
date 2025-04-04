@@ -61,13 +61,9 @@ public class Cerberus {
 
 		PartDefinition Cerberus6 = leg3.addOrReplaceChild("Cerberus6", CubeListBuilder.create().texOffs(1041, 15).addBox(0.0F, -0.25F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offset(5.0F, 0.0F, 0.0F));
 
-		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 14.0F, 2.0F));
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, 2.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition body2 = body.addOrReplaceChild("body2", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
-
-		PartDefinition body_rotation = body2.addOrReplaceChild("body_rotation", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 1.5708F, 0.0F, 0.0F));
-
-		PartDefinition body_sub_1 = body_rotation.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition body_sub_1 = body.addOrReplaceChild("body_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition Cerberus3 = body_sub_1.addOrReplaceChild("Cerberus3", CubeListBuilder.create().texOffs(1009, 14).addBox(-4.5F, -2.45F, -4.15F, 9.0F, 9.0F, 7.0F, new CubeDeformation(-0.2F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
@@ -77,9 +73,9 @@ public class Cerberus {
 
 		PartDefinition bone78 = Cerberus3.addOrReplaceChild("bone78", CubeListBuilder.create().texOffs(1039, 2).addBox(-5.0F, 0.6847F, -0.4604F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.0F, -1.35F, 0.15F, -2.7925F, -1.5708F, 1.5708F));
 
-		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(-1.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
 
-		PartDefinition mane_rotation = upper_body.addOrReplaceChild("mane_rotation", CubeListBuilder.create(), PartPose.offset(1.0F, 2.5F, -2.5F));
+		PartDefinition mane_rotation = upper_body.addOrReplaceChild("mane_rotation", CubeListBuilder.create(), PartPose.offset(0.0F, 2.5F, -2.5F));
 
 		PartDefinition mane_sub_1 = mane_rotation.addOrReplaceChild("mane_sub_1", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
@@ -91,25 +87,25 @@ public class Cerberus {
 
 		PartDefinition bone74 = Cerberus2.addOrReplaceChild("bone74", CubeListBuilder.create().texOffs(1039, 2).addBox(-4.9F, 0.6847F, -0.4604F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-6.5F, -4.6F, 2.65F, -2.7925F, -1.5708F, 1.5708F));
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -7.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 12.25F, -9.75F));
 
 		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -3.0F, 0.5F));
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create(), PartPose.offset(-2.0F, -1.75F, 3.25F));
 
 		PartDefinition oor19 = right_ear.addOrReplaceChild("oor19", CubeListBuilder.create().texOffs(992, 9).addBox(-2.0133F, -13.0412F, -9.5056F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.1F))
 		.texOffs(996, 18).addBox(-2.0002F, -13.0412F, -9.8053F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(996, 18).addBox(-1.5543F, -14.3265F, -9.7912F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(992, 9).addBox(-1.5364F, -14.3417F, -9.5119F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(4.75F, 10.5F, 6.4F, 0.0F, 0.4363F, -0.0349F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -3.0F, 0.5F));
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create(), PartPose.offset(2.0F, -1.75F, 3.25F));
 
 		PartDefinition oor20 = left_ear.addOrReplaceChild("oor20", CubeListBuilder.create().texOffs(992, 9).addBox(-2.2168F, -12.9519F, -8.6529F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.1F))
 		.texOffs(996, 18).addBox(-2.2299F, -12.9519F, -8.9526F, 2.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(996, 18).addBox(-1.6465F, -14.2449F, -8.9397F, 1.0F, 2.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(992, 9).addBox(-1.699F, -14.2522F, -8.659F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.09F)), PartPose.offsetAndRotation(-2.3F, 10.5F, 6.6F, 0.0F, -0.4363F, 0.0349F));
 
-		PartDefinition head2 = real_head.addOrReplaceChild("head2", CubeListBuilder.create(), PartPose.offset(-1.0F, 0.0F, 0.0F));
+		PartDefinition head2 = real_head.addOrReplaceChild("head2", CubeListBuilder.create(), PartPose.offset(-1.0F, 1.25F, 2.75F));
 
 		PartDefinition cerberus = head2.addOrReplaceChild("cerberus", CubeListBuilder.create().texOffs(974, 0).addBox(-4.0F, -3.0F, -3.75F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
 		.texOffs(995, 8).addBox(1.74F, -2.99F, -1.85F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F))
@@ -147,7 +143,7 @@ public class Cerberus {
 
 		PartDefinition cerberushoofd = real_head.addOrReplaceChild("cerberushoofd", CubeListBuilder.create().texOffs(974, 0).addBox(-1.0178F, -3.0F, -12.2563F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
 		.texOffs(995, 8).addBox(4.7222F, -2.99F, -10.3563F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F))
-		.texOffs(995, 8).addBox(-1.7578F, -2.99F, -10.3563F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F)), PartPose.offsetAndRotation(-5.0F, 0.6F, 9.3F, 0.0F, 0.3927F, 0.0F));
+		.texOffs(995, 8).addBox(-1.7578F, -2.99F, -10.3563F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F)), PartPose.offsetAndRotation(-5.0F, 1.85F, 12.05F, 0.0F, 0.3927F, 0.0F));
 
 		PartDefinition bone60 = cerberushoofd.addOrReplaceChild("bone60", CubeListBuilder.create().texOffs(1003, 15).addBox(0.9822F, -10.4093F, -18.9933F, 4.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 0.75F, 10.0F, 0.3491F, 0.0F, 0.0F));
 
@@ -183,7 +179,7 @@ public class Cerberus {
 
 		PartDefinition cerberushoofd2 = real_head.addOrReplaceChild("cerberushoofd2", CubeListBuilder.create().texOffs(974, 0).addBox(-7.4442F, -2.0F, -12.0649F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
 		.texOffs(995, 8).addBox(-1.7042F, -1.99F, -10.1649F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F))
-		.texOffs(995, 8).addBox(-8.1841F, -1.99F, -10.1649F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F)), PartPose.offsetAndRotation(7.5F, -0.4F, 10.5F, 0.0F, -0.3927F, 0.0F));
+		.texOffs(995, 8).addBox(-8.1841F, -1.99F, -10.1649F, 1.0F, 6.0F, 4.0F, new CubeDeformation(-0.002F)), PartPose.offsetAndRotation(7.5F, 0.85F, 13.25F, 0.0F, -0.3927F, 0.0F));
 
 		PartDefinition bone73 = cerberushoofd2.addOrReplaceChild("bone73", CubeListBuilder.create().texOffs(1003, 15).addBox(-5.4442F, -9.4042F, -19.1555F, 4.0F, 0.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.0F, 0.75F, 10.0F, 0.3491F, 0.0F, 0.0F));
 
@@ -215,11 +211,11 @@ public class Cerberus {
 
 		PartDefinition bone85 = cerberushoofd2.addOrReplaceChild("bone85", CubeListBuilder.create().texOffs(994, 13).addBox(-3.5904F, -11.5632F, -22.8943F, 2.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.9043F, 3.6F, 11.531F, 0.3491F, 0.0F, 0.0F));
 
-		PartDefinition glowing_eyes = partdefinition.addOrReplaceChild("glowing_eyes", CubeListBuilder.create(), PartPose.offset(0.0F, 13.5F, -7.0F));
+		PartDefinition glowing_eyes = partdefinition.addOrReplaceChild("glowing_eyes", CubeListBuilder.create(), PartPose.offset(0.0F, 12.25F, -9.75F));
 
 		PartDefinition real_glowing_eyes = glowing_eyes.addOrReplaceChild("real_glowing_eyes", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition cerberushoofd3 = real_glowing_eyes.addOrReplaceChild("cerberushoofd3", CubeListBuilder.create(), PartPose.offsetAndRotation(7.5F, -0.4F, 10.5F, 0.0F, -0.3927F, 0.0F));
+		PartDefinition cerberushoofd3 = real_glowing_eyes.addOrReplaceChild("cerberushoofd3", CubeListBuilder.create(), PartPose.offsetAndRotation(7.5F, 0.85F, 13.25F, 0.0F, -0.3927F, 0.0F));
 
 		PartDefinition oog2 = cerberushoofd3.addOrReplaceChild("oog2", CubeListBuilder.create().texOffs(1014, 30).addBox(-3.693F, -10.028F, -14.2649F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(986, 12).addBox(-3.962F, -10.0163F, -14.27F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
@@ -229,7 +225,7 @@ public class Cerberus {
 		.texOffs(986, 12).addBox(-1.6625F, -10.3141F, -14.2606F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(1014, 30).addBox(-1.2271F, -10.4258F, -14.1273F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.65F, 9.6F, 1.95F, 0.0F, 0.0F, -0.0436F));
 
-		PartDefinition cerberus9 = real_glowing_eyes.addOrReplaceChild("cerberus9", CubeListBuilder.create(), PartPose.offset(1.0F, -1.0F, 0.0F));
+		PartDefinition cerberus9 = real_glowing_eyes.addOrReplaceChild("cerberus9", CubeListBuilder.create(), PartPose.offset(1.0F, 0.25F, 2.75F));
 
 		PartDefinition oog4 = cerberus9.addOrReplaceChild("oog4", CubeListBuilder.create().texOffs(1014, 30).addBox(-0.2957F, -11.1773F, -5.95F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(986, 12).addBox(-0.6454F, -11.162F, -5.96F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
@@ -239,7 +235,7 @@ public class Cerberus {
 		.texOffs(986, 12).addBox(1.8454F, -11.262F, -5.96F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(1014, 30).addBox(2.3F, -11.3728F, -5.82F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.65F, 9.6F, 1.95F, 0.0F, 0.0F, -0.0436F));
 
-		PartDefinition cerberushoofd4 = real_glowing_eyes.addOrReplaceChild("cerberushoofd4", CubeListBuilder.create(), PartPose.offsetAndRotation(-5.0F, 0.6F, 9.3F, 0.0F, 0.3927F, 0.0F));
+		PartDefinition cerberushoofd4 = real_glowing_eyes.addOrReplaceChild("cerberushoofd4", CubeListBuilder.create(), PartPose.offsetAndRotation(-5.0F, 1.85F, 12.05F, 0.0F, 0.3927F, 0.0F));
 
 		PartDefinition oog6 = cerberushoofd4.addOrReplaceChild("oog6", CubeListBuilder.create().texOffs(1014, 30).addBox(2.6836F, -11.3074F, -14.4563F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
 		.texOffs(986, 12).addBox(2.4147F, -11.2956F, -14.4595F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.1F))
