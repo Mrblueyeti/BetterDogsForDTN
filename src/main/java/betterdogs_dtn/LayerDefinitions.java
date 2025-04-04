@@ -2088,15 +2088,15 @@ public class LayerDefinitions {
 
 		PartDefinition jack_russel_mane2 = upper_body.addOrReplaceChild("jack_russel_mane2", CubeListBuilder.create().texOffs(1648, 3).addBox(-2.5F, -12.75F, -9.55F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.05F)), PartPose.offset(0.0F, 9.5F, 6.5F));
 
-		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 13.75F, -5.75F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 14.75F, -5.75F));
 
 		PartDefinition real_head = head.addOrReplaceChild("real_head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create().texOffs(156, 25).mirror().addBox(-1.0434F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offsetAndRotation(2.1508F, -0.8793F, -0.104F, 2.9621F, -1.4798F, -1.8075F));
+		PartDefinition left_ear = real_head.addOrReplaceChild("left_ear", CubeListBuilder.create().texOffs(156, 25).mirror().addBox(-1.0434F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)).mirror(false), PartPose.offsetAndRotation(2.1508F, -1.8793F, -0.104F, 2.9621F, -1.4798F, -1.8075F));
 
-		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create().texOffs(156, 25).addBox(-0.9566F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-2.1508F, -0.8793F, -0.104F, 2.9621F, 1.4798F, 1.8075F));
+		PartDefinition right_ear = real_head.addOrReplaceChild("right_ear", CubeListBuilder.create().texOffs(156, 25).addBox(-0.9566F, -1.3139F, -1.631F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.2F)), PartPose.offsetAndRotation(-2.1508F, -1.8793F, -0.104F, 2.9621F, 1.4798F, 1.8075F));
 
-		PartDefinition Jackrussel_head2 = real_head.addOrReplaceChild("Jackrussel_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 2.2438F, 1.208F, 1.5708F, 0.0F, 0.0F));
+		PartDefinition Jackrussel_head2 = real_head.addOrReplaceChild("Jackrussel_head2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 1.2438F, 1.208F, 1.5708F, 0.0F, 0.0F));
 
 		PartDefinition Jackrussel_head_rot_r1 = Jackrussel_head2.addOrReplaceChild("Jackrussel_head_rot_r1", CubeListBuilder.create().texOffs(1634, 0).addBox(-2.5F, -14.55F, 1.0F, 5.0F, 4.0F, 5.0F, new CubeDeformation(0.0F))
 		.texOffs(115, 26).addBox(-1.8F, -13.3701F, 0.9456F, 1.0F, 1.0F, 1.0F, new CubeDeformation(-0.05F))
