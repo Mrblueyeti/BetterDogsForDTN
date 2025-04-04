@@ -28,47 +28,47 @@ public class BetterDogsForDTN {
     }
 
     public static void registeringSkin(RegisterCustomDogModelsEvent event) {
-        event.register(new Builder(getRes("borzoi"), ModelLayerLocations.BORZOI));
-        event.register(new Builder(getRes("corgi"), ModelLayerLocations.CORGI));
-        event.register(new Builder(getRes("shih_tzu"), ModelLayerLocations.SHIH_TZU));
-        event.register(new Builder(getRes("border_collie"), ModelLayerLocations.BORDER_COLLIE));
-        event.register(new Builder(getRes("basset_hound"), ModelLayerLocations.BASSET_HOUND));
-        event.register(new Builder(getRes("irish_terrier"), ModelLayerLocations.IRISH_TERRIER));
+        event.register(new Builder(getRes("borzoi"), ModelLayerLocations.BORZOI).withAccessory());
+        event.register(new Builder(getRes("corgi"), ModelLayerLocations.CORGI).withAccessory());
+        event.register(new Builder(getRes("shih_tzu"), ModelLayerLocations.SHIH_TZU).withAccessory());
+        event.register(new Builder(getRes("border_collie"), ModelLayerLocations.BORDER_COLLIE).withAccessory());
+        event.register(new Builder(getRes("basset_hound"), ModelLayerLocations.BASSET_HOUND).withAccessory());
+        event.register(new Builder(getRes("irish_terrier"), ModelLayerLocations.IRISH_TERRIER).withAccessory());
         event.register(new Builder(getRes("chihuahua"), ModelLayerLocations.CHIHUAHUA)
-            .withDefaultScale(0.704f));
-        event.register(new Builder(getRes("boxer"), ModelLayerLocations.BOXER));
-        event.register(new Builder(getRes("bull_terrier"), ModelLayerLocations.BULL_TERRIER));
-        event.register(new Builder(getRes("german_shepherd"), ModelLayerLocations.GERMAN_SHEPHERD));
-        event.register(new Builder(getRes("rottweiler"), ModelLayerLocations.ROTTWEILER));
-        event.register(new Builder(getRes("pug"), ModelLayerLocations.PUG));
+            .withDefaultScale(0.704f).withAccessory());
+        event.register(new Builder(getRes("boxer"), ModelLayerLocations.BOXER).withAccessory());
+        event.register(new Builder(getRes("bull_terrier"), ModelLayerLocations.BULL_TERRIER).withAccessory());
+        event.register(new Builder(getRes("german_shepherd"), ModelLayerLocations.GERMAN_SHEPHERD).withAccessory());
+        event.register(new Builder(getRes("rottweiler"), ModelLayerLocations.ROTTWEILER).withAccessory());
+        event.register(new Builder(getRes("pug"), ModelLayerLocations.PUG).withAccessory());
         event.register(new Builder(getRes("wolf"), ModelLayerLocations.BD_WOLF)
-            .withGlowingEyes());
-        event.register(new Builder(getRes("australian_shepherd"), ModelLayerLocations.AUSTRALIAN_SHEPHERD));
-        event.register(new Builder(getRes("beagle"), ModelLayerLocations.BEAGLE));
-        event.register(new Builder(getRes("bernese_dog"), ModelLayerLocations.BERNESE_DOG));        
-        event.register(new Builder(getRes("dachshund"), ModelLayerLocations.DACHSHUND));        
-        event.register(new Builder(getRes("english_bulldog"), ModelLayerLocations.ENGLISH_BULLDOG));        
-        event.register(new Builder(getRes("king_charles"), ModelLayerLocations.KING_CHARLES));        
-        event.register(new Builder(getRes("west_cairn_terrier"), ModelLayerLocations.WEST_CAIRN_TERRIER));        
-        event.register(new Builder(getRes("labrador_golden_retriever"), ModelLayerLocations.LAB_GOL));        
-        event.register(new Builder(getRes("dalmatian"), ModelLayerLocations.DUMA));        
-        event.register(new Builder(getRes("great_dane"), ModelLayerLocations.GREAT_DANE));        
-        event.register(new Builder(getRes("jack_russel"), ModelLayerLocations.JACK_RUSSEL));
+            .withGlowingEyes().withAccessory());
+        event.register(new Builder(getRes("australian_shepherd"), ModelLayerLocations.AUSTRALIAN_SHEPHERD).withAccessory());
+        event.register(new Builder(getRes("beagle"), ModelLayerLocations.BEAGLE).withAccessory());
+        event.register(new Builder(getRes("bernese_dog"), ModelLayerLocations.BERNESE_DOG).withAccessory());        
+        event.register(new Builder(getRes("dachshund"), ModelLayerLocations.DACHSHUND).withAccessory());        
+        event.register(new Builder(getRes("english_bulldog"), ModelLayerLocations.ENGLISH_BULLDOG).withAccessory());        
+        event.register(new Builder(getRes("king_charles"), ModelLayerLocations.KING_CHARLES).withAccessory());        
+        event.register(new Builder(getRes("west_cairn_terrier"), ModelLayerLocations.WEST_CAIRN_TERRIER).withAccessory());        
+        event.register(new Builder(getRes("labrador_golden_retriever"), ModelLayerLocations.LAB_GOL).withAccessory());        
+        event.register(new Builder(getRes("dalmatian"), ModelLayerLocations.DUMA).withAccessory());        
+        event.register(new Builder(getRes("great_dane"), ModelLayerLocations.GREAT_DANE).withAccessory());        
+        event.register(new Builder(getRes("jack_russel"), ModelLayerLocations.JACK_RUSSEL).withAccessory());
         event.register(new Builder(getRes("pomeranian"), ModelLayerLocations.POMERANIAN)
-            .withCustomRootPivot(new Vector3f(0, 17, 0)));
-        event.register(new Builder(getRes("samoyed"), ModelLayerLocations.SAMOYED));        
-        event.register(new Builder(getRes("st_bernard"), ModelLayerLocations.ST_BERNARD));        
-        event.register(new Builder(getRes("poodle"), ModelLayerLocations.POODLE));        
-        event.register(new Builder(getRes("husky"), ModelLayerLocations.HUSKY));        
-        event.register(new Builder(getRes("doberman"), ModelLayerLocations.ADOBEMAN));        
-        event.register(new Builder(getRes("neapolitan_mastiff"), ModelLayerLocations.NEAPO));        
-        event.register(new Builder(getRes("afghan_hound"), ModelLayerLocations.AFGHAN_HOUND));        
-        event.register(new Builder(getRes("shiba_inu"), ModelLayerLocations.SHIBA_INU));        
+            .withCustomRootPivot(new Vector3f(0, 17, 0)).withAccessory());
+        event.register(new Builder(getRes("samoyed"), ModelLayerLocations.SAMOYED).withAccessory());        
+        event.register(new Builder(getRes("st_bernard"), ModelLayerLocations.ST_BERNARD).withAccessory());        
+        event.register(new Builder(getRes("poodle"), ModelLayerLocations.POODLE).withAccessory());        
+        event.register(new Builder(getRes("husky"), ModelLayerLocations.HUSKY).withAccessory());        
+        event.register(new Builder(getRes("doberman"), ModelLayerLocations.ADOBEMAN).withAccessory());        
+        event.register(new Builder(getRes("neapolitan_mastiff"), ModelLayerLocations.NEAPO).withAccessory());        
+        event.register(new Builder(getRes("afghan_hound"), ModelLayerLocations.AFGHAN_HOUND).withAccessory());        
+        event.register(new Builder(getRes("shiba_inu"), ModelLayerLocations.SHIBA_INU).withAccessory());        
         event.register(new Builder(getRes("cerberus"), ModelLayerLocations.CERBERUS)
-            .withGlowingEyes());
-        event.register(new Builder(getRes("schnauzer"), ModelLayerLocations.SCHNAUZER));          
-        event.register(new Builder(getRes("komondor"), ModelLayerLocations.KOMONDOR));          
-        event.register(new Builder(getRes("samoyed_new"), ModelLayerLocations.SAMOYED_NEW));          
+            .withGlowingEyes().withAccessory());
+        event.register(new Builder(getRes("schnauzer"), ModelLayerLocations.SCHNAUZER).withAccessory());          
+        event.register(new Builder(getRes("komondor"), ModelLayerLocations.KOMONDOR).withAccessory());          
+        event.register(new Builder(getRes("samoyed_new"), ModelLayerLocations.SAMOYED_NEW).withAccessory());          
     }
 
     public static void registeringSkinJson(RegisterDogSkinJsonPathEvent event) {
