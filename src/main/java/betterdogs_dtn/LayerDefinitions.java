@@ -3338,14 +3338,9 @@ public class LayerDefinitions {
 
 		PartDefinition real_tail = tail.addOrReplaceChild("real_tail", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition samoyed_tail = real_tail.addOrReplaceChild("samoyed_tail", CubeListBuilder.create(), PartPose.offset(0.5F, -7.836F, -18.5736F));
+		PartDefinition samoyed_tail_r1 = real_tail.addOrReplaceChild("samoyed_tail_r1", CubeListBuilder.create().texOffs(2368, 17).addBox(-1.6969F, -7.7345F, -2.0816F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.8064F, -1.1307F, -1.0489F, -3.1339F, -0.1744F, -1.6151F));
 
-		PartDefinition samoyed_tail_rot = samoyed_tail.addOrReplaceChild("samoyed_tail_rot", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1339F, -0.1744F, -1.6151F));
-
-		PartDefinition samoyed_tail_anim = samoyed_tail_rot.addOrReplaceChild("samoyed_tail_anim", CubeListBuilder.create(), PartPose.offset(2.3034F, -1.0142F, 1.0304F));
-
-		PartDefinition samoyed_tail_spin = samoyed_tail_anim.addOrReplaceChild("samoyed_tail_spin", CubeListBuilder.create().texOffs(2368, 17).addBox(-6.7503F, -7.2599F, -21.2847F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
-		.texOffs(2356, 15).addBox(-6.7503F, -7.2599F, -24.2847F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.75F, 2.0F, -0.25F));
+		PartDefinition samoyed_tail_r2 = real_tail.addOrReplaceChild("samoyed_tail_r2", CubeListBuilder.create().texOffs(2356, 15).addBox(1.3265F, -8.862F, 5.249F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.8009F, 3.6863F, 8.5916F, -3.1339F, -0.1744F, -1.6151F));
 
 		PartDefinition right_hind_leg = partdefinition.addOrReplaceChild("right_hind_leg", CubeListBuilder.create(), PartPose.offset(-2.5F, 17.0F, 6.0F));
 
@@ -3372,15 +3367,6 @@ public class LayerDefinitions {
 		PartDefinition sad = body.addOrReplaceChild("sad", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -1.5708F, 0.0F, 0.0F));
 
 		PartDefinition samoyed_body2 = sad.addOrReplaceChild("samoyed_body2", CubeListBuilder.create().texOffs(2372, 0).addBox(-4.5F, -3.6996F, -4.3823F, 9.0F, 8.0F, 9.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, -0.1409F, 1.9087F, 1.5708F, 0.0F, 0.0F));
-
-		PartDefinition samoyed_tail2 = samoyed_body2.addOrReplaceChild("samoyed_tail2", CubeListBuilder.create(), PartPose.offset(0.5F, 4.6805F, 4.5141F));
-
-		PartDefinition samoyed_tail_rot2 = samoyed_tail2.addOrReplaceChild("samoyed_tail_rot2", CubeListBuilder.create(), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -3.1339F, -0.1744F, -1.6151F));
-
-		PartDefinition samoyed_tail_anim2 = samoyed_tail_rot2.addOrReplaceChild("samoyed_tail_anim2", CubeListBuilder.create(), PartPose.offset(2.3034F, -1.0142F, 1.0304F));
-
-		PartDefinition samoyed_tail_spin2 = samoyed_tail_anim2.addOrReplaceChild("samoyed_tail_spin2", CubeListBuilder.create().texOffs(2368, 17).addBox(-1.6986F, -7.4804F, -2.9333F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F))
-		.texOffs(2356, 15).addBox(-1.6986F, -7.4804F, -5.9333F, 3.0F, 9.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.75F, 2.0F, -0.25F));
 
 		PartDefinition upper_body = partdefinition.addOrReplaceChild("upper_body", CubeListBuilder.create().texOffs(2408, 0).addBox(-5.5F, -2.85F, -5.65F, 11.0F, 7.0F, 11.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 14.0F, -3.0F, 1.5708F, 0.0F, 0.0F));
 
